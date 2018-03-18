@@ -1,4 +1,8 @@
+import os
 from setuptools import setup, find_packages
+
+def read(filename):
+    return open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 install_requires = [
     'requests',
@@ -9,8 +13,8 @@ setup(
     version="0.2",
     description=("Library that implements the acme-dns client communication and "
                  "persistent account storage on the client host"),
-    long_description=open('README.md','r').read(),
-    long_description_content_type='text/markdown',
+    long_description=read('README.rst'),
+    long_description_content_type='text/x-rst',
     url='https://github.com/joohoi/pyacmedns',
     download_url='https://github.com/joohoi/pyacmedns/archive/0.2.tar.gz',
     author="Joona Hoikkala",
@@ -30,5 +34,5 @@ setup(
         'Intended Audience :: System Administrators',
         'License :: OSI Approved :: MIT License',
     ],
-    keywords=['acme', 'tls', 'x509', 'acmedns', 'letsencrypt'],
+    keywords=['acme tls x509 acmedns letsencrypt'],
 )
