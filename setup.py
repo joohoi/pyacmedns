@@ -6,13 +6,13 @@ install_requires = [
 
 setup(
     name='pyacmedns',
-    version="0.1",
+    version="0.2",
     description=("Library that implements the acme-dns client communication and "
                  "persistent account storage on the client host"),
     long_description=open('README.md','r').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/joohoi/pyacmedns',
-    download_url='https://github.com/joohoi/pyacmedns/archive/0.1.tar.gz',
+    download_url='https://github.com/joohoi/pyacmedns/archive/0.2.tar.gz',
     author="Joona Hoikkala",
     author_email='joona@kuori.org',
     license="MIT",
